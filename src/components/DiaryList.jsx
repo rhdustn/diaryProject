@@ -34,17 +34,17 @@ const ControlMenu = ({ value, onChange, optionList }) => {
 const DiaryList = ({ diaryList }) => {
   const navigate = useNavigate();
   const [sortType, setSortType] = useState("latest");
-  const [filter, setFilter] = useState("all");
+  const [fliter, setFliter] = useState("all");
 
   const getProcessDiaryList = () => {
-    const filterCallBack = (item) => {
-      if (filter === "weather1" && item.weather === 1) {
+    const fliterCallBack = (item) => {
+      if (fliter === "weather1" && item.weather === 1) {
         return true;
-      } else if (filter === "weather2" && item.weather === 2) {
+      } else if (fliter === "weather2" && item.weather === 2) {
         return true;
-      } else if (filter === "weather3" && item.weather === 3) {
+      } else if (fliter === "weather3" && item.weather === 3) {
         return true;
-      } else if (filter === "weather4" && item.weather === 4) {
+      } else if (fliter === "weather4" && item.weather === 4) {
         return true;
       }
       return false;
@@ -59,10 +59,10 @@ const DiaryList = ({ diaryList }) => {
 
     const copyList = JSON.parse(JSON.stringify(diaryList));
 
-    const filteredList =
-      filter === "all" ? copyList : copyList.filter((it) => filterCallBack(it));
+    const fliteredList =
+      fliter === "all" ? copyList : copyList.fliter((it) => fliterCallBack(it));
 
-    const sortedList = filteredList.sort(compare);
+    const sortedList = fliteredList.sort(compare);
     return sortedList;
   };
   return (
@@ -75,8 +75,8 @@ const DiaryList = ({ diaryList }) => {
           optionList={sortOptionList}
         />
         <ControlMenu
-          value={filter}
-          onChange={setFilter}
+          value={fliter}
+          onChange={setFliter}
           optionList={fliterOption}
         />
       </div>
