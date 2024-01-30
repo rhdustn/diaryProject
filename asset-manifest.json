@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rhdustn/diaryProject.git/static/css/main.1e8bf590.css",
+    "main.js": "/rhdustn/diaryProject.git/static/js/main.c781d0a4.js",
+    "index.html": "/rhdustn/diaryProject.git/index.html",
+    "main.1e8bf590.css.map": "/rhdustn/diaryProject.git/static/css/main.1e8bf590.css.map",
+    "main.c781d0a4.js.map": "/rhdustn/diaryProject.git/static/js/main.c781d0a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e8bf590.css",
+    "static/js/main.c781d0a4.js"
+  ]
+}
